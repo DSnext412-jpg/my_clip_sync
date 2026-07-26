@@ -171,20 +171,3 @@ Alternatively, create two services manually:
 | `Ctrl+O` | Import .txt/.md file |
 | `Ctrl+Z` | Undo |
 | `Ctrl+Y` | Redo |
-
-## Future Improvements
-
-- [ ] Rich text editing
-- [ ] Code syntax highlighting
-- [ ] Audio/video calls
-- [ ] Persistent storage option
-- [ ] Export to PDF
-- [ ] Drawing canvas
-- [ ] Room password protection
-- [ ] File sharing beyond images
-- [ ] Chat sidebar
-- [ ] Cursor position awareness
-
-## License
-
-MIT
