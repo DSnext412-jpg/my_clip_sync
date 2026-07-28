@@ -1,173 +1,195 @@
-# ClipNote
+<div align="center">
 
-A real-time collaborative workspace. Create a room, share the code, and start working together instantly. No account required.
+# 📋 My Clip Sync
 
-## Features
+### *Real-Time Collaborative Notes & Clipboard Workspace*
 
-- **Real-Time Collaboration** - Every keystroke syncs instantly across all connected users via Socket.IO
-- **Monaco Editor** - Full VS Code editor with syntax highlighting, search, replace, undo/redo, and more
-- **Image Board** - Drag, drop, paste, or upload images. Everyone in the room sees them instantly
-- **No Account Required** - Create or join a room with a simple code. No signup, no login, no authentication
-- **Dark & Light Mode** - Toggle between dark and light themes. Preference saved in localStorage
-- **Ephemeral by Design** - Rooms exist only in server memory. When empty, they disappear forever
-- **Fully Responsive** - Works perfectly on desktop, tablet, and mobile
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=3000&pause=1000&color=3B82F6&center=true&vCenter=true&width=850&lines=Create+Rooms.;Share+Notes.;Sync+Instantly.;Collaborate+Seamlessly."/>
 
-## Tech Stack
+<p>
 
-### Frontend
-- **React 18** with TypeScript
-- **Vite** for building
-- **Tailwind CSS** for styling
-- **shadcn/ui** component primitives
-- **Framer Motion** for animations
-- **Monaco Editor** (VS Code editor)
-- **Lucide React** icons
-- **Socket.IO Client**
-- **react-hot-toast** notifications
+<img src="https://img.shields.io/github/stars/DSnext412-jpg/my_clip_sync?style=for-the-badge" />
+<img src="https://img.shields.io/github/forks/DSnext412-jpg/my_clip_sync?style=for-the-badge" />
+<img src="https://img.shields.io/github/license/DSnext412-jpg/my_clip_sync?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
 
-### Backend
-- **Node.js** with TypeScript
-- **Express** HTTP server
-- **Socket.IO** WebSocket server
-- **In-memory storage** (no database)
+</p>
 
-## Folder Structure
+*A simple and fast collaborative workspace where multiple users can join a room using a custom code and edit notes together in real time.*
 
+</div>
+
+---
+
+## ✨ Features
+
+- 🏠 Create private rooms with custom room codes
+- 👥 Join shared workspaces instantly
+- 📝 Real-time collaborative note editing
+- 📋 One-click copy entire workspace
+- 📂 Import `.txt` and `.md` files
+- 🔍 Search inside notes
+- 🖼️ Shared image panel
+- ⚡ Lightweight and responsive interface
+- 🌙 Clean modern UI
+- 📱 Works across desktop and mobile
+
+---
+
+## 🚀 How It Works
+
+```text
+Create Room
+      │
+      ▼
+Share Room Code
+      │
+      ▼
+Friends Join
+      │
+      ▼
+Collaborate in Real Time
+      │
+      ▼
+Save • Copy • Share
 ```
-clipnote/
-├── client/                  # React frontend
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── ui/          # shadcn/ui primitives
-│   │   │   ├── LandingPage.tsx
-│   │   │   ├── CreateRoom.tsx
-│   │   │   ├── JoinRoom.tsx
-│   │   │   ├── Room.tsx
-│   │   │   ├── Toolbar.tsx
-│   │   │   ├── StatusBar.tsx
-│   │   │   └── ImageBoard.tsx
-│   │   ├── hooks/
-│   │   │   └── useTheme.ts
-│   │   ├── lib/
-│   │   │   ├── socket.ts
-│   │   │   └── utils.ts
-│   │   ├── types/
-│   │   │   └── index.ts
-│   │   ├── App.tsx
-│   │   ├── main.tsx
-│   │   └── index.css
-│   ├── index.html
-│   ├── package.json
-│   └── vite.config.ts
-├── server/                  # Express + Socket.IO backend
-│   ├── src/
-│   │   ├── index.ts
-│   │   ├── roomManager.ts
-│   │   └── types.ts
-│   ├── package.json
-│   └── tsconfig.json
-├── shared/                  # Shared TypeScript types
-│   └── types.ts
-├── render.yaml              # Render deployment config
+
+---
+
+## 🛠 Tech Stack
+
+| Frontend | Backend | Deployment |
+|----------|----------|------------|
+| React | Supabase | Vercel |
+| TypeScript | Realtime Database | GitHub |
+| Tailwind CSS | Authentication | |
+
+---
+
+## 📂 Project Structure
+
+```text
+my_clip_sync/
+
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── hooks/
+│   ├── utils/
+│   └── assets/
+│
+├── public/
+├── supabase/
+├── package.json
 └── README.md
 ```
 
-## Installation
+---
 
-### Prerequisites
-- Node.js 18+
-- npm
+## 📸 Preview
 
-### Clone and Install
+> Replace these with actual screenshots.
+
+| Home | Workspace |
+|------|-----------|
+| 📷 Home Screen | 📷 Shared Notes |
+
+| Image Panel | Mobile View |
+|-------------|-------------|
+| 📷 Image Sharing | 📷 Responsive UI |
+
+---
+
+## ⚡ Getting Started
+
+Clone the repository
 
 ```bash
-git clone <repo-url>
-cd clipnote
+git clone https://github.com/DSnext412-jpg/my_clip_sync.git
+```
 
-# Install server dependencies
-cd server
-npm install
+Go into the project
 
-# Install client dependencies
-cd ../client
+```bash
+cd my_clip_sync
+```
+
+Install dependencies
+
+```bash
 npm install
 ```
 
-### Environment Variables
+Start the development server
 
 ```bash
-# server/.env
-PORT=3001
-CLIENT_URL=http://localhost:5173
-
-# client/.env
-VITE_SERVER_URL=http://localhost:3001
-```
-
-## Run Locally
-
-```bash
-# Terminal 1: Start the server
-cd server
-npm run dev
-
-# Terminal 2: Start the client
-cd client
 npm run dev
 ```
 
-The client runs on `http://localhost:5173` and the server on `http://localhost:3001`.
+---
 
-## Build for Production
+## 🌟 Roadmap
 
-```bash
-# Build server
-cd server
-npm run build
+- ✅ Real-time note syncing
+- ✅ Room-based collaboration
+- ✅ Image sharing panel
+- ✅ Search within notes
+- ✅ Import `.txt` & `.md`
+- ⏳ Rich text formatting
+- ⏳ Drag & drop uploads
+- ⏳ Export as PDF
+- ⏳ Offline support
+- ⏳ Version history
 
-# Build client
-cd client
-npm run build
+---
+
+## 💡 Why My Clip Sync?
+
+Unlike traditional note-taking apps, **My Clip Sync** focuses on **instant collaboration** without requiring complex setup. Simply create a room, share the code, and start working together in seconds.
+
+Perfect for:
+
+- 👨‍💻 Developers
+- 🎓 Students
+- 👥 Teams
+- 📚 Study Groups
+- 📝 Brainstorming Sessions
+- 💼 Remote Collaboration
+
+---
+
+## 🤝 Contributing
+
+Contributions are always welcome!
+
+```text
+Fork 🍴
+   ↓
+Create Branch 🌱
+   ↓
+Make Changes 💻
+   ↓
+Commit ✅
+   ↓
+Open Pull Request 🚀
 ```
 
-## Deploy on Render
+---
 
-1. Push the repository to GitHub
-2. Go to [render.com](https://render.com) and connect your repository
-3. Use the provided `render.yaml` for Blueprint deployment
-4. Set the environment variables:
-   - Server: `PORT=3001`, `CLIENT_URL=<your-client-url>`
-   - Client: `VITE_SERVER_URL=<your-server-url>`
+<div align="center">
 
-Alternatively, create two services manually:
+### ⭐ If you found this project useful, consider giving it a Star!
 
-### Web Service (Server)
-- **Build Command**: `cd server && npm install && npm run build`
-- **Start Command**: `cd server && npm start`
+<img src="https://github-readme-stats.vercel.app/api?username=DSnext412-jpg&show_icons=true&theme=tokyonight&hide_border=true"/>
 
-### Static Site (Client)
-- **Build Command**: `cd client && npm install && npm run build`
-- **Publish Directory**: `client/dist`
+<br>
 
-## Screenshots
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=DSnext412-jpg&theme=tokyonight&hide_border=true"/>
 
-<!-- Add screenshots here -->
+---
 
-| Page | Preview |
-|------|---------|
-| Landing | ![]() |
-| Create Room | ![]() |
-| Join Room | ![]() |
-| Editor | ![]() |
+### Made with ❤️ by **Dipak Sonawane**
 
-## Keyboard Shortcuts
+**Sync Ideas. Share Instantly. Collaborate Better.**
 
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl+F` | Search |
-| `Ctrl+H` | Replace |
-| `Ctrl+Shift+C` | Copy entire workspace |
-| `Ctrl+O` | Import .txt/.md file |
-| `Ctrl+Z` | Undo |
-| `Ctrl+Y` | Redo |
+</div>
