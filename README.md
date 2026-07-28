@@ -178,17 +178,6 @@ Open Pull Request 🚀
 
 <div align="center">
 
-### ⭐ If you found this project useful, consider giving it a Star!
-
-<img src="https://github-readme-stats.vercel.app/api?username=DSnext412-jpg&show_icons=true&theme=tokyonight&hide_border=true"/>
-
-<br>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=DSnext412-jpg&theme=tokyonight&hide_border=true"/>
-
----
-
-### Made with ❤️ by **Dipak Sonawane**
 
 **Sync Ideas. Share Instantly. Collaborate Better.**
 
